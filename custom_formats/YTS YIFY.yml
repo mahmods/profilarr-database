@@ -1,0 +1,17 @@
+name: YTS YIFY
+description: Matches YTS and YIFY release groups - efficient encodes with good quality-to-size ratio
+tags:
+- Release Group
+- Efficient
+conditions:
+- name: YTS
+  negate: false
+  pattern: YTS
+  required: false
+  type: release_group
+- name: YIFY
+  negate: false
+  pattern: YIFY
+  required: false
+  type: release_group
+tests: []

@@ -1,0 +1,245 @@
+name: TV Shows Regular (1-2GB)
+description: "Regular TV show profile for standard shows. Targets 1-2GB per episode max with good quality-to-size ratio. Prioritizes YTS/YIFY and other efficient groups, limited 2160p options. No 720p allowed."
+tags:
+- TV Shows
+- Regular
+- Size Optimized
+- 1080p Primary
+- Limited 2160p
+upgradesAllowed: true
+minCustomFormatScore: 1000
+upgradeUntilScore: 300000
+minScoreIncrement: 1
+custom_formats:
+- name: YTS YIFY
+  score: 200000
+- name: 1080p WEB-DL
+  score: 180000
+- name: 1080p Bluray
+  score: 170000
+- name: 1080p WEBRip
+  score: 160000
+- name: 1080p Balanced Tier 1
+  score: 150000
+- name: 1080p Quality Tier 1
+  score: 140000
+- name: 1080p Quality Tier 2
+  score: 135000
+- name: 1080p Quality Tier 3
+  score: 130000
+- name: 1080p Quality Tier 4
+  score: 125000
+- name: 1080p Quality Tier 5
+  score: 120000
+- name: 2160p WEB-DL
+  score: 110000
+- name: 2160p Bluray
+  score: 105000
+- name: 2160p Balanced Tier 1
+  score: 95000
+- name: 2160p Balanced Tier 2
+  score: 90000
+- name: AMZN
+  score: 4000
+- name: ATVP
+  score: 4000
+- name: DSNP
+  score: 4000
+- name: HMAX
+  score: 3000
+- name: MAX
+  score: 3000
+- name: NF
+  score: 3000
+- name: HDR
+  score: 1000
+- name: HDR10
+  score: 1000
+- name: DTS-HD MA
+  score: 800
+- name: TrueHD
+  score: 800
+- name: FLAC
+  score: 700
+- name: PCM
+  score: 700
+- name: DTS-HD HRA
+  score: 500
+- name: Opus
+  score: 500
+- name: Dolby Digital +
+  score: 400
+- name: Atmos
+  score: 300
+- name: DTS-ES
+  score: 300
+- name: DTS
+  score: 200
+- name: Dolby Digital
+  score: 100
+- name: WEB-DL Tier 1
+  score: 100
+- name: WEB-DL Tier 2
+  score: 80
+- name: WEB-DL Tier 3
+  score: 60
+- name: WEB-DL Tier 4
+  score: 40
+- name: WEB-DL Tier 5
+  score: 20
+- name: Repack3
+  score: 8
+- name: Repack2
+  score: 7
+- name: Repack1
+  score: 6
+- name: AAC
+  score: 0
+- name: BCORE
+  score: 0
+- name: HTSR
+  score: 0
+- name: HULU
+  score: 0
+- name: iT
+  score: 0
+- name: NOW
+  score: 0
+- name: PCOK
+  score: 0
+- name: PMTP
+  score: 0
+- name: ROKU
+  score: 0
+- name: SHO
+  score: 0
+- name: STAN
+  score: 0
+- name: AV1
+  score: -999999
+- name: B&W
+  score: -999999
+- name: Banned Groups
+  score: -999999
+- name: Banned Groups (Title)
+  score: -999999
+- name: Banned WEBRip
+  score: -999999
+- name: Full Disc
+  score: -999999
+- name: Remux
+  score: -999999
+- name: Upscaled
+  score: -999999
+- name: VP9
+  score: -999999
+- name: VVC
+  score: -999999
+- name: 720p WEB-DL
+  score: -999999
+- name: 720p Bluray
+  score: -999999
+- name: 720p WEBRip
+  score: -999999
+- name: 720p Quality Tier 1
+  score: -999999
+- name: 720p Quality Tier 2
+  score: -999999
+- name: 720p Quality Tier 3
+  score: -999999
+- name: 720p Quality Tier 4
+  score: -999999
+- name: 720p Quality Tier 5
+  score: -999999
+- name: 720p Balanced Tier 1
+  score: -999999
+- name: 480p WEB-DL
+  score: -999999
+- name: SD Quality Tier 1
+  score: -999999
+- name: SD Quality Tier 2
+  score: -999999
+- name: DVD
+  score: -999999
+- name: DVD Remux
+  score: -999999
+- name: Dolby Vision
+  score: -999999
+- name: HDR10+
+  score: -999999
+- name: HLG
+  score: -999999
+- name: PQ
+  score: -999999
+- name: 2160p Quality Tier 1
+  score: -999999
+- name: 2160p Quality Tier 2
+  score: -999999
+- name: 2160p Quality Tier 3
+  score: -999999
+- name: 2160p Quality Tier 4
+  score: -999999
+- name: 2160p Quality Tier 5
+  score: -999999
+- name: 2160p Quality Tier 6
+  score: -999999
+- name: 2160p Quality Tier 7
+  score: -999999
+custom_formats_radarr:
+- name: MA
+  score: 3000
+- name: 1080p Golden Popcorn
+  score: 2000
+- name: Special Edition
+  score: 1000
+- name: ATV
+  score: 1000
+- name: CRIT
+  score: 1000
+- name: 3D
+  score: -999999
+- name: Extras
+  score: -999999
+- name: Full Disc (Quality Match)
+  score: -999999
+- name: Remux (Quality Match)
+  score: -999999
+- name: Sing Along
+  score: -999999
+custom_formats_sonarr:
+- name: Season Pack
+  score: 20
+- name: Remux (Source)
+  score: -999999
+- name: TV Extras
+  score: -999999
+qualities:
+- id: -1
+  name: TV Regular Quality
+  description: 1080p primary with very limited 2160p, no 720p allowed
+  qualities:
+  - id: 4
+    name: Bluray-2160p
+    minSize: 400
+    maxSize: 2048
+  - id: 5
+    name: WEBDL-2160p
+    minSize: 400
+    maxSize: 2048
+  - id: 10
+    name: Bluray-1080p
+    minSize: 300
+    maxSize: 2048
+  - id: 9
+    name: WEBDL-1080p
+    minSize: 300
+    maxSize: 2048
+  - id: 11
+    name: WEBRip-1080p
+    minSize: 300
+    maxSize: 2048
+upgrade_until:
+  id: -1
+  name: TV Regular Quality
+  description: 1080p primary with very limited 2160p, no 720p allowed
+language: must_original
