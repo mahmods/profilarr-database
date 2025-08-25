@@ -199,14 +199,5 @@ conditions:
   pattern: x0r
   required: false
   type: release_group
-- name: YIFY
-  negate: false
-  pattern: YIFY
-  required: false
-  type: release_group
-- name: YTS
-  negate: false
-  pattern: YTS
-  required: false
-  type: release_group
+
 tests: []
